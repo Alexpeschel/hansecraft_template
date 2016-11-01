@@ -1,0 +1,169 @@
+/*
+Header
+==========================================
+Defines the styles of the Shopware storeview header and its components.
+
+It contains the viewport specific styles inside media queries.
+
+The header sizes are defined by the unitize mixin.
+
+More precise designations are commented inside the document.
+*/
+
+    // Basic header
+.header-main {
+    background: transparent;
+	// Logo
+	.logo-main {
+
+		.logo--link {
+			.unitize-height(126, 16);
+			display: block;
+      width: 181px;
+      max-width: 100%;
+      margin: 0 auto;
+		}
+
+		// Smaller logo for mobile viewports
+		.logo--shop {
+			.unitize-height(126, 16);
+			width: 100%;
+      text-align: center;
+		}
+
+    .logo-svg {
+      height: 100%;
+      .logo-icon {
+
+      }
+      .logo-subtext {
+        display: none;
+      }
+    }
+
+  }
+}
+
+    // Shop navigation
+.shop--navigation {
+
+
+    .navigation--entry {
+        .btn {
+            // .unitize-width(40, 16);
+            width: auto;
+            background: transparent;
+        }
+
+        .icon--basket,
+        .icon--account {
+            .unitize(font-size, 30);
+        }
+
+        .icon--heart-circle {
+            .unitize-height(30);
+            .unitize(font-size, 30);
+            vertical-align: middle;
+        }
+
+        .icon--search {
+            .unitize(font-size, 27);
+        }
+    }
+
+    // Shop navigation quantity badges
+    .cart--quantity,
+    .notes--quantity {
+        .unitize(-2, 16, top);
+        .unitize(left, 29);
+    }
+
+
+    // Menu Button toggle OffCanvas
+    .entry--menu-left {
+
+        .btn {
+            // .unitize(font-size, 17);
+            font-size: 0;
+            color: #fff;
+        }
+
+    }
+}
+
+    // Tablet styling for the global shop header
+@media screen and (min-width: @tabletViewportWidth) {
+
+    .header-main {
+        position: relative;
+
+        .logo-main {
+            .unitize-padding(0, 0, 43, 10);
+            width: 100%;
+
+      			.logo--link { .unitize-height(126, 16); }
+
+      			// Larger logo for tablet & desktop viewports
+      			.logo--shop {
+      				.unitize-height(126, 16);
+      				width: 100%
+      			}
+
+            .logo-svg {
+
+              .logo-subtext {
+                display: block;
+              }
+
+            }
+
+        }
+
+    }
+
+    .logo-main,
+    .shop--navigation {
+        float: none;
+        width: 100%;
+    }
+
+    .shop--navigation {
+        width: 100%;
+        //changed menu button display
+        .entry--menu-left { display: block; }
+        // Search entry
+        .entry--search {
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: @zindex-shop-navigation-search-higher-viewport;
+        }
+
+    }
+
+}
+
+    // Tablet Landscape styling for the global shop header
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+
+    .header-main {
+        .logo-main { width: 100%; }
+        .shop--navigation { width: 100%; }
+    }
+
+    .shop--navigation {
+        .entry--search {
+            width: 35%;
+            margin-right: 0;
+        }
+    }
+
+    .navigation--list {
+
+        .entry--account {
+            .account--link { .unitize(padding-left, 45); }
+
+
+        }
+
+    }
+}

@@ -1,0 +1,59 @@
+.product--delivery {
+  .delivery--status-icon {
+    width: auto;
+    height: auto;
+    &:before {
+      font-family: 'icomoon';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+  .delivery--status-shipping-free {
+      background: @highlight-info;
+  }
+  .delivery--text-shipping-free {
+      color: @highlight-info;
+  }
+
+.delivery--status-available {
+      background: transparent;
+      &:before {
+        color: @highlight-success;
+        content: "\e906";
+      }
+}
+.delivery--text-available {
+      color: @highlight-success;
+}
+
+  .delivery--status-more-is-coming {
+      background: transparent;
+      &:before {
+        color: @highlight-notice;
+        content: "\e905";
+      }
+  }
+  .delivery--text-more-is-coming {
+      color: @highlight-notice;
+  }
+
+  .delivery--status-not-available {
+    background: transparent;
+    &:before {
+        color: @highlight-error;
+        content: "\e904";
+    }
+  }
+
+  .delivery--text-not-available {
+      color: @highlight-error;
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<defs>
+	<pattern  x="0" width="72" height="72" patternUnits="userSpaceOnUse" id="c" viewBox="17.32 -73.149 72 72" overflow="visible">
+		<g>
+			<polygon fill="none" points="17.32,-1.149 89.32,-1.149 89.32,-73.149 17.32,-73.149 			"/>
+			<g>
+				<path fill="none" d="M17.32-73.15v72h72v-72H17.32z"/>
+				<path fill="none" stroke="#1A171B" stroke-width="0.3" stroke-dasharray="2,2" d="M16.32-72.15h73.44 M16.32-68.15h73.44
+					 M16.32-64.15h73.44 M16.32-60.15h73.44 M16.32-56.15h73.44 M16.32-52.15h73.44 M16.32-48.15h73.44 M16.32-44.15h73.44
+					 M16.32-40.15h73.44 M16.32-36.15h73.44 M16.32-32.15h73.44 M16.32-28.15h73.44 M16.32-24.15h73.44 M16.32-20.15h73.44
+					 M16.32-16.15h73.44 M16.32-12.15h73.44 M16.32-8.15h73.44 M16.32-4.15h73.44 M16.32-0.15h73.44 M18.36-74.15H91.8 M18.36-70.15
+					H91.8 M18.36-66.15H91.8 M18.36-62.15H91.8 M18.36-58.15H91.8 M18.36-54.15H91.8 M18.36-50.15H91.8 M18.36-46.15H91.8
+					 M18.36-42.15H91.8 M18.36-38.15H91.8 M18.36-34.15H91.8 M18.36-30.15H91.8 M18.36-26.15H91.8 M18.36-22.15H91.8 M18.36-18.15
+					H91.8 M18.36-14.15H91.8 M18.36-10.15H91.8 M18.36-6.15H91.8 M18.36-2.15H91.8 M0-6.15h10.2"/>
+			</g>
+		</g>
+	</pattern>
+</defs>
+<pattern  id="SVGID_1_" xlink:href="#c" patternTransform="matrix(1 0 0 -1 -1451.4282 -16905.1914)">
+</pattern>
+<polygon display="none" fill="url(#SVGID_1_)" points="20,0 20,20 0,20 0,2756.244 2564.097,2756.244 2564.097,0 "/>
+<pattern  id="SVGID_2_" xlink:href="#c" patternTransform="matrix(1 0 0 -1 -1451.4282 -16905.1914)">
+</pattern>
+<rect fill="url(#SVGID_2_)" width="20" height="20"/>
+</svg>

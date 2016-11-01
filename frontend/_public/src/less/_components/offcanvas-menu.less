@@ -1,0 +1,64 @@
+/*
+Off-canvas menu
+=======================================
+The off-canvas menu is the default shopping cart menu in Shopware.
+
+It is an expanding menu that displays the shopping cart at the right side of the screen.
+
+It can be enabled/disabled inside the Shopware 5 backend.
+
+The functionality is provided by the `jquery.off-canvas-menu.js` file.
+*/
+
+// Is used for the necessary styling of an off-canvas menu
+.off-canvas {
+
+    .sidebar--navigation .navigation--link {
+
+        .is--icon-left {
+            float: none;
+        }
+    }
+}
+
+.navigation--smartphone {
+
+	.entry--close-off-canvas {
+		// .secondary-gradient();
+    background:
+                linear-gradient(125deg,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.88) 15%, rgba(0,0,0,0.80) 50%, rgba(0,0,0,0.88) 100%),
+                rgba(235,229,255,0.5)
+                url(../../img/bg-pattern.svg);
+    background-repeat:
+                no-repeat,
+                repeat;
+
+	}
+}
+
+
+@media screen and(min-width: @tabletViewportWidth) {
+
+    // Reset the styles of the standard off-canvas elements on higher screen sizes
+    .off-canvas {
+        .transition(all 0.45s cubic-bezier(.3,0,.15,1));
+        background: #fff;
+        position: fixed;
+        .unitize-width(280);
+        height: 100%;
+        bottom: 0;
+        z-index: @zindex-offcanvas;
+
+    }
+
+    .sidebar-main {
+        .entry--close-off-canvas {
+            display: block;
+        }
+
+        .icon--arrow-right,
+        .icon--arrow-left {
+            display: block;
+        }
+    }
+}

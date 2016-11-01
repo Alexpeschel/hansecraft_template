@@ -1,0 +1,92 @@
+@media screen and (min-width: @tabletViewportWidth) {
+
+    .offcanvas--overlay {
+        display: block;
+    }
+
+    .sidebar-main {
+    	.unitize-width(280);
+		.unitize(padding-top, 0);
+
+		.is--ctl-listing &,
+        .is--ctl-forms &,
+        .is--ctl-tellafriend &,
+        .is--ctl-newsletter &,
+        .is--ctl-sitemap &,
+        .is--ctl-custom &,
+        .is--ctl-note.is--user &,
+        .is--ctl-address &,
+		.is--ctl-account.is--user & {
+
+			& + .content--wrapper {
+				.unitize(margin-left, 0);
+			}
+		}
+
+		.is--ctl-blog &,
+		.is--ctl-note &,
+		.is--ctl-index &,
+		.is--ctl-detail &,
+		.is--ctl-search &,
+		.is--ctl-checkout &,
+        .is--ctl-register &,
+		.is--ctl-campaign &,
+		.is--ctl-account.is--act-logout &,
+		.is--ctl-account.is--act-password &,
+        .is--ctl-account.is--act-resetPassword &,
+		.is--ctl-listing.is--no-sidebar & {
+			display: block;
+
+		}
+
+
+    }
+
+
+    .sidebar--navigation {
+
+
+        .navigation--link {
+
+            .is--icon-right {
+                display: block;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+
+    .is--ctl-forms,
+    .is--ctl-custom {
+        .sidebar-main {
+            .sidebar--categories-navigation {
+                display: block;
+            }
+        }
+    }
+
+    //Don't display shop sites sidebar on tablet and desktop
+    .sidebar-main {
+        .shop-sites--container {
+            display: block;
+        }
+
+        &.off-canvas {
+            background: #fff;
+        }
+    }
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+    .sidebar-main {
+        .unitize(padding-top, 0);
+
+        &.off-canvas {
+            position: fixed;
+            z-index: @zindex-offcanvas;
+        }
+    }
+}
