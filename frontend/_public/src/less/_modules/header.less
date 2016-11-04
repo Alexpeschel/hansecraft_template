@@ -42,22 +42,32 @@ More precise designations are commented inside the document.
     }
 
   }
+  .header--navigation {
+    position: static;
+  }
 }
 
     // Shop navigation
 .shop--navigation {
-
+    position: static;
 
     .navigation--entry {
         .btn {
             // .unitize-width(40, 16);
             width: auto;
             background: transparent;
+            // color: #fff;
         }
 
-        .icon--basket,
-        .icon--account {
+        .icon--basket-circle,
+        .icon--account,
+        .icon-- {
             .unitize(font-size, 30);
+            display: inline;
+            position: relative;
+            vertical-align: middle;
+            top: 0;
+            left: 0;
         }
 
         .icon--heart-circle {
@@ -81,7 +91,10 @@ More precise designations are commented inside the document.
 
     // Menu Button toggle OffCanvas
     .entry--menu-left {
-
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
         .btn {
             // .unitize(font-size, 17);
             font-size: 0;
@@ -89,6 +102,32 @@ More precise designations are commented inside the document.
         }
 
     }
+
+    .entry--search {
+      .is--active {
+        &.btn {
+          background: transparent;
+          color: #fff;
+          border-color: transparent;
+        }
+      }
+    }
+}
+
+.entry--search {
+  &.is--active {
+    .main-search--form {
+        .unitize(top, 196);
+        background: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+  .entry--search {
+    left: 0;
+    width: 50%;
+  }
 }
 
     // Tablet styling for the global shop header
@@ -152,18 +191,39 @@ More precise designations are commented inside the document.
 
     .shop--navigation {
         .entry--search {
-            width: 35%;
+            width: 32%;
+            max-width: 640px;
             margin-right: 0;
         }
     }
 
     .navigation--list {
 
-        .entry--account {
-            .account--link { .unitize(padding-left, 45); }
+      .entry--cart {
 
+        .icon--basket-circle {
+            .unitize(left, 8);
+            display: block;
+            position: absolute;
+            top: 50%;
+        }
+
+      }
+      .entry--account {
+
+        .account--link {
+          .unitize(padding-left, 45);
 
         }
+
+        .icon--account {
+          .unitize(left, 8);
+          display: block;
+          position: absolute;
+          top: 50%;
+        }
+
+      }
 
     }
 }

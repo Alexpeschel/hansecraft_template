@@ -1,3 +1,28 @@
+.sidebar-main.off-canvas {
+  background: #000;
+}
+.offcanvas--overlay {
+  background: #000;
+  .overlay--headline {
+    background: transparent;
+    text-align: right;
+  }
+  .overlay--category {
+    a {
+      display: block;
+      &:hover {
+        .category--headline {
+          color: @brand-primary;
+        }
+      }
+    }
+    .category--headline {
+      color: #fff;
+      .unitize(font-size, 16);
+    }
+  }
+}
+
 @media screen and (min-width: @tabletViewportWidth) {
 
     .offcanvas--overlay {
@@ -6,39 +31,42 @@
 
     .sidebar-main {
     	.unitize-width(280);
-		.unitize(padding-top, 0);
+  		.unitize(padding-top, 0);
 
-		.is--ctl-listing &,
-        .is--ctl-forms &,
-        .is--ctl-tellafriend &,
-        .is--ctl-newsletter &,
-        .is--ctl-sitemap &,
-        .is--ctl-custom &,
-        .is--ctl-note.is--user &,
-        .is--ctl-address &,
-		.is--ctl-account.is--user & {
+  		.is--ctl-listing &,
+          .is--ctl-forms &,
+          .is--ctl-tellafriend &,
+          .is--ctl-newsletter &,
+          .is--ctl-sitemap &,
+          .is--ctl-custom &,
+          .is--ctl-note.is--user &,
+          .is--ctl-address &,
+  		.is--ctl-account.is--user & {
 
-			& + .content--wrapper {
-				.unitize(margin-left, 0);
-			}
-		}
+  			& + .content--wrapper {
+  				.unitize(margin-left, 0);
+  			}
+  		}
 
-		.is--ctl-blog &,
-		.is--ctl-note &,
-		.is--ctl-index &,
-		.is--ctl-detail &,
-		.is--ctl-search &,
-		.is--ctl-checkout &,
-        .is--ctl-register &,
-		.is--ctl-campaign &,
-		.is--ctl-account.is--act-logout &,
-		.is--ctl-account.is--act-password &,
-        .is--ctl-account.is--act-resetPassword &,
-		.is--ctl-listing.is--no-sidebar & {
-			display: block;
+  		.is--ctl-blog &,
+  		.is--ctl-note &,
+  		.is--ctl-index &,
+  		.is--ctl-detail &,
+  		.is--ctl-search &,
+  		.is--ctl-checkout &,
+          .is--ctl-register &,
+  		.is--ctl-campaign &,
+  		.is--ctl-account.is--act-logout &,
+  		.is--ctl-account.is--act-password &,
+          .is--ctl-account.is--act-resetPassword &,
+  		.is--ctl-listing.is--no-sidebar & {
+  			display: block;
 
-		}
+  		}
 
+      .sidebar--categories-wrapper {
+          .unitize(margin-top, 42);
+      }
 
     }
 
@@ -75,8 +103,20 @@
         }
 
         &.off-canvas {
-            background: #fff;
+            background: #000;
         }
+    }
+    .categories--headline {
+      // display: block;
+    }
+    .sidebar--navigation {
+      .reset-border-radius();
+      border: 0;
+    }
+
+    .shop-sites--container {
+      .unitize-padding(15, 0);
+      border: 0;
     }
 }
 

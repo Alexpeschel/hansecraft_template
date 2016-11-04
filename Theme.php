@@ -25,6 +25,7 @@ MIT
 SHOPWARE_EOD;
 
     protected $javascript = [
+      'src/js/jquery.off-canvas-menu.js',
       'src/js/jquery.shopware-responsive.js'
     ];
 

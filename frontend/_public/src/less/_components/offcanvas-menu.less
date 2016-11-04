@@ -13,12 +13,36 @@ The functionality is provided by the `jquery.off-canvas-menu.js` file.
 // Is used for the necessary styling of an off-canvas menu
 .off-canvas {
 
-    .sidebar--navigation .navigation--link {
+  .close--off-canvas {
+    background:
+                linear-gradient(125deg,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.88) 15%, rgba(0,0,0,0.80) 50%, rgba(0,0,0,0.88) 100%),
+                rgba(235,229,255,0.5)
+                url(../../img/bg-pattern.svg);
+    background-repeat:
+                no-repeat,
+                repeat;
+  }
 
-        .is--icon-left {
-            float: none;
-        }
+    .sidebar--navigation {
+    background: transparent;
+
+       .navigation--link {
+
+          .is--icon-left {
+              float: none;
+          }
+      }
     }
+
+    .link--go-back {
+
+    }
+
+    .link--go-main {
+      display: inline-block;
+      width: auto;
+    }
+
 }
 
 .navigation--smartphone {
@@ -34,6 +58,18 @@ The functionality is provided by the `jquery.off-canvas-menu.js` file.
                 repeat;
 
 	}
+}
+
+.page-wrap {
+  margin-left: 50px;
+  .transition(all 0.45s cubic-bezier(.3,0,.15,1));
+}
+
+.shop--navigation {
+  .entry--menu-left {
+      .transition(all 0.45s cubic-bezier(.3,0,.15,1));
+      .transform-style(preserve-3d);
+  }
 }
 
 
@@ -53,7 +89,7 @@ The functionality is provided by the `jquery.off-canvas-menu.js` file.
 
     .sidebar-main {
         .entry--close-off-canvas {
-            display: block;
+            // display: block;
         }
 
         .icon--arrow-right,

@@ -23,26 +23,26 @@
       color: @highlight-info;
   }
 
-.delivery--status-available {
-      background: transparent;
-      &:before {
-        color: @highlight-success;
-        content: "\e906";
-      }
-}
-.delivery--text-available {
-      color: @highlight-success;
-}
+  .delivery--status-available {
+        background: transparent;
+        &:before {
+          color: @text-color;
+          content: "\e906";
+        }
+  }
+  .delivery--text-available {
+        color: @text-color;
+  }
 
   .delivery--status-more-is-coming {
       background: transparent;
       &:before {
-        color: @highlight-notice;
+        color: @text-color;
         content: "\e905";
       }
   }
   .delivery--text-more-is-coming {
-      color: @highlight-notice;
+      color: @text-color;
   }
 
   .delivery--status-not-available {

@@ -1,32 +1,106 @@
 .footer-main {
   background: transparent;
+
   .footer--bottom {
     .unitize-padding(16, 12, 16, 12, 12);
   }
+
   .footer--copyright-heart {
     .unitize-padding(0, 3);
     color: @brand-primary;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
+
+  .newsletter--form {
+    max-width: 380px;
+  }
+
   .newsletter--button {
       border: 1px solid #fff;
       color: @text-color;
+
       &:hover {
         color: @brand-primary;
       }
   }
+  .column--content {
+
+    .column--desc {
+      max-width: 680px;
+    }
+  }
 }
 
 .footer--vat-info {
+
   .vat-info--text {
     .unitize(font-size, 10);
   }
 }
 
+.footer--service-menu {
+  .service--list {
+    .service--link {
+      color: @text-color;
+      &:hover {
+        color: @brand-primary;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: @tabletViewportWidth) {
   .footer-main {
+
+    .column--headline {
+
+      &::after {
+          display: block;
+      }
+    }
+
     .footer--column {
-      width: 100% / 3;
+      width: 100%;
+      .unitize-padding(0, 10);
+      border-bottom: 1px solid @border-color;
+
+      &.is--last {
+        .unitize(padding-right, 10);
+        border-bottom: 1px solid @border-color;
+      }
+    }
+
+    .footer--columns {
+      padding: 0;
+      border: 0;
+    }
+
+    .column--headline {
+      margin: 0;
+      .unitize-padding(8, 0);
+      cursor: pointer;
+    }
+
+    .column--content {
+      display: none;
+    }
+
+    .navigation--link {
+      line-height: normal;
+      .unitize-padding(10, 0);
+    }
+
+    .footer-minimal {
+      display: block;
+    }
+
+  }
+
+  .footer-minimal {
+    .footer--service-menu {
+      .service--list {
+        margin-bottom: 20px;
+      }
     }
   }
 }

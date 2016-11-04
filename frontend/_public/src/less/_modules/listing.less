@@ -3,3 +3,16 @@
     color: @text-color;
   }
 }
+
+@media screen and(min-width: @tabletViewportWidth) {
+  .listing--actions {
+    background: transparent;
+    border: 0;
+  }
+  .action--filter-btn {
+    .unitize-margin(0, 20, 10, 0);
+  }
+  .action--sort {
+    margin: 0;
+  }
+}

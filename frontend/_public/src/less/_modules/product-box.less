@@ -1,5 +1,89 @@
 .product--box {
+
+  .box--content {
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100px;
+      border: 0;
+      border-bottom: 1px solid @border-color;
+  }
+
+  .product--title {
+    color: #fff;
+  }
+
   .product--description {
+    color: #fff;
     font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   }
+
+  .product--delivery {
+
+    .delivery--status-available {
+          background: transparent;
+          &:before {
+            color: #fff;
+            content: "\e906";
+          }
+    }
+    .delivery--text-available {
+          color: #fff;
+    }
+
+    .delivery--status-more-is-coming {
+        background: transparent;
+        &:before {
+          color: #fff;
+          content: "\e905";
+        }
+    }
+    .delivery--text-more-is-coming {
+        color: #fff;
+    }
+
+  }
+
+  .product--price-info {
+    color: #fff;
+  }
+
+  .product--action {
+    color: #fff;
+  }
+
+  .product--badges {
+    .unitize(top, 5);
+
+    .badge--shippingfree {
+      background: blue;
+      color: #fff;
+    }
+  }
+
+  .product--price {
+
+    .price--default {
+      color: #fff;
+    }
+  }
+
+}
+
+.box--slider {
+
+  .product--title {
+    color: #fff;
+  }
+
+  .product--price-info {
+    color: #fff;
+  }
+
+  .product--price {
+
+    .price--default {
+      color: #fff;
+    }
+  }
+
 }

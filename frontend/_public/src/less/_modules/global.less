@@ -41,21 +41,27 @@ body {
     font-family: @font-base-stack;
     font-weight: @font-base-weight;
     color: @text-color;
-    background:
-                linear-gradient(125deg,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.88) 15%, rgba(0,0,0,0.80) 50%, rgba(0,0,0,0.88) 100%),
-                rgba(235,229,255,0.5)
-                url(../../img/bg-pattern.svg);
-    background-repeat:
-                no-repeat,
-                repeat;
+    background: #000;
+    overflow-x: hidden;
 }
 
 .content-main--inner {
-	background: #fff;
+	// background: #fff;
 }
 
 p {
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.page-wrap {
+  .unitize-min-width(270, 16);
+  background:
+              linear-gradient(125deg,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.88) 15%, rgba(0,0,0,0.80) 50%, rgba(0,0,0,0.88) 100%),
+              url(../../img/bg-pattern.svg),
+              rgba(235,229,255,1);
+  background-repeat:
+              no-repeat,
+              repeat;
 }
 
 @media screen and(min-width: @tabletViewportWidth) {
