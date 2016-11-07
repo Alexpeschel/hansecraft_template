@@ -4,6 +4,65 @@
 }
 .is--ctl-detail {
   .content-main--inner {
-    background: #2f2f2f;
+    background: transparent;
+  }
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+  .product--navigation {
+    display: none;
+    position: static;
+
+    .navigation--link {
+      top: auto;
+    }
+
+    .link--prev {
+      .unitize(-200, 16, left);
+
+      .image--container {
+        .unitize(right, 50);
+        left: 0;
+      }
+
+      &.can--slide:hover {
+        .unitize(0, 16, left);
+
+        .image--container {
+          right: 0;
+        }
+      }
+    }
+
+    .link--next {
+      .unitize(-200, 16, right);
+
+      .image--container {
+        .unitize(left, 50);
+        right: 0;
+      }
+
+      &.can--slide:hover {
+        .unitize(0, 16, right);
+
+        .image--container {
+          left: 0;
+        }
+      }
+    }
+
+    .link--prev-button {
+      float: right;
+    }
+
+    .link--next-button {
+      float: left;
+    }
+  }
+}
+
+@media screen and (min-width: @desktopBiggerViewportWidth) {
+  .product--navigation {
+    display: block;
   }
 }

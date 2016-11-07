@@ -92,13 +92,19 @@ More precise designations are commented inside the document.
     // Menu Button toggle OffCanvas
     .entry--menu-left {
       position: fixed;
-      top: 50%;
+      top: 0;
       left: 0;
-      transform: translateY(-50%);
+      width: 50px;
+      height: 100%;
+      background: #000;
+      z-index: @zindex-shop-navigation-entry--menu-left;
         .btn {
             // .unitize(font-size, 17);
             font-size: 0;
             color: #fff;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
     }
