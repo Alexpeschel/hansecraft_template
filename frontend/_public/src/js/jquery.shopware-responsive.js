@@ -8,7 +8,9 @@
       // Slide panel
       .addPlugin('.footer--column .column--headline', 'swCollapsePanel', {
           contentSiblingSelector: '.column--content'
-      }, ['xs', 's', 'm', 'l', 'xl']);
+      }, ['xs', 's', 'm', 'l', 'xl'])
+
+      .addPlugin('*[data-subcategory-nav="true"]', 'swSubCategoryNav', ['xs', 's', 'm', 'l', 'xl']);
 
   // Buy button Support for Listing infiniteScroll
   $.subscribe( "plugin/swInfiniteScrolling/onFetchNewPageFinished", function() {
