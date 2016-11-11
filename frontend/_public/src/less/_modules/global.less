@@ -46,7 +46,7 @@ body {
 }
 
 .content-main--inner {
-	// background: #fff;
+  padding: 0;
 }
 
 p {
@@ -69,4 +69,15 @@ p {
         .box-shadow(0 0 0 0 transparent);
     }
 
+    .content-main--inner {
+      padding: 0;
+    }
+
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+
+  .content-main--inner {
+    padding: 0;
+  }
 }

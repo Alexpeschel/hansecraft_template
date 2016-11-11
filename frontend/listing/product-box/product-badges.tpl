@@ -24,14 +24,14 @@
 			{/if}
 		{/block}
 
-        {* Highlight badge *}
-        {block name='frontend_listing_box_article_hint'}
-            {if $sArticle.highlight}
-                <div class="product--badge badge--recommend">
-                    {s name="ListingBoxTip"}{/s}
-                </div>
-            {/if}
-        {/block}
+    {* Highlight badge *}
+    {block name='frontend_listing_box_article_hint'}
+        {if $sArticle.highlight}
+            <div class="product--badge badge--recommend">
+                {s name="ListingBoxTip"}{/s}
+            </div>
+        {/if}
+    {/block}
 
 		{* Newcomer badge *}
 		{block name='frontend_listing_box_article_new'}

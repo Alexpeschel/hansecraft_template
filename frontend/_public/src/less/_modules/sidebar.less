@@ -21,6 +21,22 @@
       .unitize(font-size, 16);
     }
   }
+
+  .is--back-button {
+    display: inline-block;
+    font-weight: normal;
+    vertical-align: text-bottom;
+  }
+  .is--icon-left {
+    margin: 0;
+    .unitize(font-size, 16, 16);
+
+    .icon--backward {
+      position: relative;
+      .unitize(top, 2);
+      left: 0;
+    }
+  }
 }
 
 @media screen and (min-width: @tabletViewportWidth) {
@@ -31,7 +47,7 @@
 
     .sidebar-main {
     	.unitize-width(280);
-  		.unitize(padding-top, 0);
+  		padding-top: 0;
 
   		.is--ctl-listing &,
           .is--ctl-forms &,
@@ -77,7 +93,7 @@
         .navigation--link {
 
             .is--icon-right {
-                display: block;
+                display: inline-block;
             }
         }
 

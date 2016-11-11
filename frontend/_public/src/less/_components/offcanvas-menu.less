@@ -61,7 +61,7 @@ The functionality is provided by the `jquery.off-canvas-menu.js` file.
 }
 
 .page-wrap {
-  margin-left: 50px;
+  .unitize-margin(0, 0, 0, 40);
   .transition(all 0.45s cubic-bezier(.3,0,.15,1));
 }
 
@@ -85,6 +85,13 @@ The functionality is provided by the `jquery.off-canvas-menu.js` file.
         bottom: 0;
         z-index: @zindex-offcanvas;
 
+        .sidebar--navigation {
+          .navigation--link {
+            .is--icon-right {
+              .unitize(5, 16, margin-top);
+            }
+          }
+        }
     }
 
     .sidebar-main {

@@ -11,7 +11,7 @@
                     <a href="{url module=widgets controller=listing action=getCategory categoryId={$category.parentId}}" data-parentId="{$category.parentId}" class="navigation--link is--back-button link--go-back" title="{s name="ButtonBack"}{/s}">
                         {block name="widgets_listing_get_category_categories_back_link_arrow_left"}
                             <span class="is--icon-left">
-                                <i class="icon--arrow-left"></i>
+                                <i class="icon--backward"></i>
                             </span>
                         {/block}
 
@@ -59,7 +59,7 @@
                                         {block name="widgets_listing_get_category_categories_item_link_children"}
                                             {if $children.childrenCount}
                                                 <span class="is--icon-right">
-                                                    <i class="icon--arrow-right"></i>
+                                                    <i class="icon--play"></i>
                                                 </span>
                                             {/if}
                                         {/block}
