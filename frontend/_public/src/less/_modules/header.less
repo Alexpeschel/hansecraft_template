@@ -13,6 +13,8 @@ More precise designations are commented inside the document.
     // Basic header
 .header-main {
     background: transparent;
+    border: 0;
+
 	// Logo
 	.logo-main {
 
@@ -151,7 +153,6 @@ More precise designations are commented inside the document.
     left: 0;
     width: 100%;
     height: 42px;
-    border: 0;
     background: #000;
 
     z-index: @zindex-shop-navigation-header-main-mobile;
@@ -245,6 +246,7 @@ More precise designations are commented inside the document.
     }
   }
   .shop--navigation {
+    .unitize(margin-right, -10);
 
     .entry--menu-left {
       position: fixed;
@@ -291,6 +293,10 @@ More precise designations are commented inside the document.
 
             }
 
+        }
+
+        .header--navigation {
+          .unitize-padding(10, 30);
         }
 
     }
