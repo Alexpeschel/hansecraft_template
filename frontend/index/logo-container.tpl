@@ -3,7 +3,7 @@
 {block name='frontend_index_logo'}
   <div class="logo--shop">
     <a class="logo--link" href="{url controller='index'}" title="{"{config name=shopName}"|escapeHtml} - {"{s name='IndexLinkDefault' namespace="frontend/index/index"}{/s}"|escape}">
-      <svg class="logo-svg" width="181px" height="126px" viewBox="-0.341 -0.924 181 126">
+      <svg class="logo-svg" viewBox="-0.341 -0.924 181 126">
         <g class="logo-icon">
         	<path fill-rule="evenodd" clip-rule="evenodd" d="M67.751,51.155c2.216-1.207,8.293-6.135,6.229-10.574
         		c-1.093-2.349-5.082-1.688-6.373,0c-1.022-1.64-4.033-2.34-5.505-0.869C58.321,43.495,65.163,49.967,67.751,51.155z"/>

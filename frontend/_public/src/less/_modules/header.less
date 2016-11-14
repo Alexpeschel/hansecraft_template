@@ -90,29 +90,29 @@ More precise designations are commented inside the document.
 
 
     // Menu Button toggle OffCanvas
-    .entry--menu-left {
-      position: fixed;
-      top: 0;
-      left: 0;
-      .unitize-width(40);
-      height: 100%;
-      background: #000;
-      z-index: @zindex-shop-navigation-entry--menu-left;
-        .btn {
-            // .unitize(font-size, 17);
-            font-size: 0;
-            color: #fff;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .icon--menu {
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-
-    }
+    // .entry--menu-left {
+    //   position: fixed;
+    //   top: 0;
+    //   left: 0;
+    //   .unitize-width(40);
+    //   height: 100%;
+    //   background: #000;
+    //   z-index: @zindex-shop-navigation-entry--menu-left;
+    //     .btn {
+    //         // .unitize(font-size, 17);
+    //         font-size: 0;
+    //         color: #fff;
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //     }
+    //     .icon--menu {
+    //       left: 50%;
+    //       transform: translate(-50%, -50%);
+    //     }
+    //
+    // }
 
     .entry--search {
       .is--active {
@@ -122,6 +122,16 @@ More precise designations are commented inside the document.
           border-color: transparent;
         }
       }
+    }
+
+    .entry--menu-left {
+
+        .btn {
+          font-size: 0;
+          color: #fff;
+        }
+
+        .icon--menu {  }
     }
 }
 
@@ -134,10 +144,124 @@ More precise designations are commented inside the document.
   }
 }
 
+@media screen and (max-width: (@phoneLandscapeViewportWidth - 0.063em)) {
+  .header-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    border: 0;
+    background: #000;
+
+    z-index: @zindex-shop-navigation-header-main-mobile;
+
+    .header--navigation {
+      position: relative;
+    }
+
+    .logo-main {
+      position: absolute;
+      right: 0;
+      width: 138px;
+
+      .logo--shop {
+        position: relative;
+        height: 16px;
+        overflow: hidden;
+      }
+
+      .logo--link {
+        position: relative;
+        bottom: 76px;
+      }
+
+      .logo-svg {
+        width: 120px;
+      }
+
+      .logo-icon {
+        display: none;
+      }
+    }
+  }
+
+  .shop--navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .navigation--entry {
+
+      .btn {
+        .unitize-padding(2, 5);
+      }
+
+      .icon--search,
+      .icon--heart-circle,
+      .icon--account,
+      .icon--basket-circle {
+        .unitize(font-size, 18);
+      }
+    }
+
+    .entry--menu-left {
+      position: static;
+      display: inline-block;
+
+      .btn {
+        .unitize(padding-left, 48);
+      }
+
+      .icon--menu {
+        .unitize(font-size, 16);
+      }
+    }
+
+  }
+
+}
+
 @media screen and (min-width: @phoneLandscapeViewportWidth) {
   .entry--search {
-    left: 0;
-    width: 50%;
+    // left: 0;
+    // width: 50%;
+    position: static;
+    width: auto;
+
+    .entry--trigger {
+      display: inline-block;
+
+    }
+
+    .main-search--form {
+      display: none;
+      position: absolute;
+      .unitize-padding(10, 10);
+
+      .main-search--field {
+        background: #fff;
+      }
+    }
+  }
+  .shop--navigation {
+
+    .entry--menu-left {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      .btn {
+        .unitize(padding-left, 30);
+        margin: 0;
+      }
+
+      .icon--menu {
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 }
 

@@ -19,3 +19,10 @@ It has a set `unitize-max-width` of `1260px` and the clearfix mixin assigned.
   .unitize-padding(0, 30);
   background: transparent;
 }
+
+
+@media screen and (max-width: (@phoneLandscapeViewportWidth - 0.063em)) {
+  .content-main {
+    .unitize(margin-top, 42);
+  }
+}
