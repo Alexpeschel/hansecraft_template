@@ -79,7 +79,7 @@ More precise designations are commented inside the document.
         }
 
         .icon--search {
-            .unitize(font-size, 27);
+            .unitize(font-size, 30);
         }
     }
 
@@ -221,6 +221,19 @@ More precise designations are commented inside the document.
 
   }
 
+  .entry--search.is--active {
+
+    .main-search--form {
+      position: fixed;
+      .unitize(top, 49);
+      width: 100%;
+
+      .icon--search {
+        .unitize(font-size, 24);
+      }
+    }
+  }
+
 }
 
 @media screen and (min-width: @phoneLandscapeViewportWidth) {
@@ -243,10 +256,14 @@ More precise designations are commented inside the document.
       .main-search--field {
         background: #fff;
       }
+
+      .main-search--button {
+        .unitize(right, 10);
+      }
     }
   }
   .shop--navigation {
-    .unitize(margin-right, -10);
+    .unitize(margin-right, -20);
 
     .entry--menu-left {
       position: fixed;
@@ -262,6 +279,17 @@ More precise designations are commented inside the document.
       .icon--menu {
         left: 50%;
         transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .has--csstransforms {
+
+    .entry--search {
+
+      .entry--trigger.is--active::after {
+        .unitize(margin-left, 5);
+        background: #fff;
       }
     }
   }
@@ -299,6 +327,13 @@ More precise designations are commented inside the document.
           .unitize-padding(10, 30);
         }
 
+        .top-bar--navigation {
+
+          .entry--service {
+              color: #fff;
+          }
+        }
+
     }
 
     .logo-main,
@@ -314,10 +349,34 @@ More precise designations are commented inside the document.
         // Search entry
         .entry--search {
             left: 50%;
+            width: 320px;
             transform: translateX(-50%);
             z-index: @zindex-shop-navigation-search-higher-viewport;
         }
 
+        .entry--notepad {
+          margin-top: 10px;
+        }
+
+        .entry--account {
+          margin-top: 10px;
+        }
+
+        .entry--cart {
+          margin-top: 10px;
+        }
+
+    }
+
+    .entry--search {
+
+      .main-search--form {
+        display: block;
+
+        .main-search--button {
+          .unitize(right, 10);
+        }
+      }
     }
 
 }
