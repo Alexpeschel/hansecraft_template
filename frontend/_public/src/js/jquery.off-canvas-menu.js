@@ -46,6 +46,14 @@
             'menuIcon': '.entry--menu-left',
 
             /**
+             * Selector for the main header
+             *
+             * @property headerMain
+             * @type {String}
+             */
+            'headerMain': '.header-main',
+
+            /**
              * Whether or not the wrapper should be moved.
              *
              * @property moveWrapper
@@ -192,6 +200,8 @@
             me.$pageWrap = $(opts.wrapSelector);
             // Cache menu Icon element
             me.$menuIcon = $(opts.menuIcon);
+            // Cache header Main element
+            me.$headerMain = $(opts.headerMain);
 
             me.isOpened = false;
 
@@ -337,6 +347,8 @@
                 me.$pageWrap.css('left', menuWidth);
                 // move menu icon element
                 me.$menuIcon.css('left', menuWidth);
+                // move header main element
+                me.$headerMain.css('left', menuWidth);
             }
 
             me.$offCanvas.addClass(opts.openClass);
@@ -378,6 +390,8 @@
                 me.$pageWrap.css('left', 0);
                 // move menu icon element
                 me.$menuIcon.css('left', 0);
+                // move header Main element
+                me.$headerMain.css('left', 0);
             }
 
             me.$offCanvas.removeClass(opts.openClass);
